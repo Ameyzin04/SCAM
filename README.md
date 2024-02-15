@@ -2,6 +2,8 @@
 
 ## Overview 
 
+![Wireframe model](<SCAM POTS & PAN.svg>)
+
 Welcome to SCAM's website. This website is designed to help consumers purchase high end pots and pans. Our website has a curated collection of all the pots and pans customers need to prepare the best meals. 
 
 ## Features
@@ -17,8 +19,7 @@ Here are the features consumers will be able to use on our website.
 
 
 
-![Here is our ERD model] 
-(file:///Users/ameyokugbe/Downloads/SCAM%20ERD.drawio.svg)
+![Here is our ERD model](file:///Users/ameyokugbe/Downloads/SCAM%20ERD.drawio.svg)
 
 
  
