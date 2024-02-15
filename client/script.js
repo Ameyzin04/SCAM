@@ -12,7 +12,7 @@ const BASE_URL = 'http://localhost:3001/'
 let sets
 
 const getSet = async (input) => {
-    sets = await axios.get(`https://localhost:3001/sets/${input}`)
+    sets = await axios.get(`http://localhost:3001/sets/${input}`)
     console.log(sets.data.results)
 }
 
@@ -30,7 +30,7 @@ const itemBrand = document.querySelectorAll("itemBrand")
 
 
 const appendSets = () => {
-    console.log(setsList)
+    console.log(sets)
     const listItem = document.createElement("li")
     const itemName = document.createElement("p")
     const itemPicture = document.createElement("img")
@@ -73,32 +73,32 @@ setList.appendChild(listItem)
        
 
 
-//Fetch and Search
-const performSearch = async (query) => {
-    try {
-        const response = await axios.get(`http://localhost:3001/products`, {
-            params: {
-                query: query
-            }
-        })
-        const products = response.data.results
-        console.log(products)
-        // Handle displaying the products in your UI
-    } catch (error) {
-        console.error('Error fetching products:', error);
-    }
-}
+// //Fetch and Search
+// const performSearch = async (query) => {
+//     try {
+//         const response = await axios.get(`http://localhost:3001/products`, {
+//             params: {
+//                 query: query
+//             }
+//         })
+//         const products = response.data.results
+//         console.log(products)
+//         // Handle displaying the products in your UI
+//     } catch (error) {
+//         console.error('Error fetching products:', error);
+//     }
+// }
 
-//Event Listener Function
-searchButton.addEventListener('click', async (event) => {
-    event.preventDefault()
-    const query = searchInput.value.trim() // Get the search query from the input bar
-    if (query !== '') {
-        performSearch(query)
-    } else {
-        alert('Please enter a search query.')
-    }
-})
+// //Event Listener Function
+// searchButton.addEventListener('click', async (event) => {
+//     event.preventDefault()
+//     const query = searchInput.value.trim() // Get the search query from the input bar
+//     if (query !== '') {
+//         performSearch(query)
+//     } else {
+//         alert('Please enter a search query.')
+//     }
+// })
 
 // //Grab Products
 // const getProduct = async () => {
